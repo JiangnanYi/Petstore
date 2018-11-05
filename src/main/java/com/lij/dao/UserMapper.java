@@ -25,9 +25,9 @@ public interface UserMapper {
 
     User selectByPrimaryName(String name);
 
-    int insertAll2(ArrayList<User> list);
+   // int insertAll2(ArrayList<User> list);
 
-    int insertAll3(List<User> list);
+   // int insertAll3(List<User> list);
 
     int udateLogout(int status);
 }

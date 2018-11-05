@@ -15,15 +15,15 @@ public interface PetMapper {
 
     int insertSelective(Pet record);
 
-    Pet selectByPrimaryKey(Integer pId);
+    List<Pet> selectByPrimaryKey(Integer pId);
 
     Pet selectByPrimaryName(String name);
 
-    Pet selectByPrimarycId(Integer cId);
+    List<Pet> selectByPrimaryStatus(String status);
 
     int updateByPrimaryKeySelective(Pet record);
 
     int updateByPrimaryKey(Pet record);
 
-    int UpdatePhoto(String photo);
+    int UpdatePhoto(Pet record);
 }
